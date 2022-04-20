@@ -1,0 +1,20 @@
+﻿@page "/"
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+@code {
+    class MenuItem
+    {
+        public Random Randomizer = new Random();
+        public string[] Proteins = { "Roast beef", "Salami", "Turkey", "Ham", "Pastrami", "Tofu" };
+        public string[] Condiments = { "yellow mustard", "brown mustard", "honey mustard", "mayo", "relish", "french dressing" };
+        public string[] Breads = { "rye", "white", "wheat", "pumpernickel", "a roll" };
+
+        public string Description = "";
+        public string Price;
+    }
+}
